@@ -1,0 +1,90 @@
+MongoDB is a Database where we can store a large amount of data. This Mongo is came from "hu-mongo-us" the meaning of this word is huge.
+
+As from the student we are learning a Databases are used to store data in a form of table and this was structured as Rows and Columns.
+
+Storing the data in the form of Rows and Columns we call it as schema based.
+
+And also we can make relation between this tables like one to many, many to many and many to one so we can call this as RDMS (Relational Database Managment System).
+
+RDBMS supported vendors are like
+  1. Oracle
+  2. My SQL
+  3. SQL Server and etc...
+
+Is MongoDB is a RDBMS --> NO
+
+Mongo DB is a Not RDBMS. It is a Documnent/No-SQL DB.
+
+Like Mongo DB there are so many Non SQL Databases are avaialbe in the market like Amazon DyanmoDB, Apache Cacho DB, IBM Db2, Azure Cosomos DB for all this concept is same where all RDBMS vendors follows a table structured.
+
+For Non-SQL DB have Collections, Documnets.
+
+RDMS VS NON SQL DB
+--------------------------
+Tables   |  Collections
+
+Colums & | Documents
+Rows
+
+Documents does not follow any schema, one document contain diiferent with other Documnent, The main important thing to consider is the document is in JSON format. The speciality of JSON is understand by all programming language.
+
+Database[ToDo] --> Collection[User] --> Documnent1[{
+                                                  "Name" : "Praveen"
+                                                  "age" : 30
+                                                  "Address" : "Hyderabad"
+                                                  }]
+                                        Documnet2[{
+                                                "Name" : "user2"
+                                                "hobbies" : "Watching Movies"
+                                                 }]
+
+
+This Non SQL DB is used in all types of applications like Desktop, Mobile and web Applications.
+
+On Web Full Stack Development most highly rated flow of development like MEAN and MERN M indicates Mongo.
+
+One Non SQL DB contain multiple collections and each collection contains multiple Documents.
+
+MongoDB is Javascript Based and internally it uses Java Script Engine of Mozilla Firefox called Spider Monkey.
+
+No SQL --> Not Only SQL
+
+Once MongoDB is nstalled in my System
+Mongo DB Server --> This is may be local or remote.
+
+Mongo DB Shell
+These are based on JS applications
+
+MongoDB Server vs Mongo DB Shell
+
+MongoDB Server is the responsaible to store our data.
+
+MongoDB shell resposible to manage server. By using this shell we can perform all required Curd operations
+
+
+To Launch/Start MongoDB Server --> mongod command
+To Launch/start  MongoDB Shell --> mongo command
+
+GUI Support is also there for MongoDB Shell. --> Compass (by Mongo DB Vendor).
+Robo T3... etc
+
+MongoDB Drivers:
+------------------
+To communicate with MongoDB with some application developed using diffrent PL like Java, C#, Python, we need drivers as a middleware.
+
+To work with Mongo DB we need to have server and shell. 
+
+Server is the physical DB where we can save a multiple logical DB's. the command for this server was mongod.
+Shell is the client where we can write commands for the server to get results.  the command for this shell was mongosh.
+
+Install Mongo DB
+---------------
+We can install Mongo DB from "https://www.mongodb.com/" ==> Products ==> Community Server (Here we have 2 flavours Community and Enterprise where community was free and Enterprise is need to PAY). After download and install it will be available on "c:/programfiles/MongoDB/server/7.0/bin" Add this folder to environment variable to access this mongo commands globally.
+
+If mongosh is not available in above folder need to install mongosh from url "https://www.mongodb.com/try/download/shell" a zip file will download copy all files from the bin folder to "c:/programfiles/MongoDB/server/7.0/bin" this folder.
+
+After all this settings open cmd promt go to any folder and type mongod We will get error as Mongodb is required a folder called C:/(running cmd folder)/data/db create this folder structure to run mongod server sucessfully. or you can specify your own folder as 
+mongod --dbpath "c:/<yourfolder path>"
+
+once mongod is running open another CMD prompt and hit mongosh. Now we can use commands to run. help() is used to show the commands available.
+
